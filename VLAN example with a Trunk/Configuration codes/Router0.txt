@@ -1,0 +1,20 @@
+Router>en
+Router#configure terminal 
+Router(config)#int g7/0.10
+Router(config-subif)#encapsulation dot1Q 10
+Router(config-subif)#ip address 10.0.0.1 255.255.255.192
+Router(config-subif)#ex
+---------------------------
+Router(config)#int g7/0.20
+Router(config-subif)#encapsulation dot1Q 20
+Router(config-subif)#ip address 10.0.0.129 255.255.255.192
+Router(config-subif)#ex
+-------------------------------
+Router(config)#int g7/0.30
+Router(config-subif)#encapsulation dot1Q 30
+Router(config-subif)#ip address 10.0.0.65 255.255.255.192
+Router(config-subif)#ex
+--------------------------
+Router(config)#int g 7/0
+Router(config-if)#no sh
+Router(config-if)#ex

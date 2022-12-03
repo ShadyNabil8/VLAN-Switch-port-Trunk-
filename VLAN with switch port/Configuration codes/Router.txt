@@ -1,0 +1,16 @@
+Router>en
+Router#configure t
+Router(config)#int f 0/0
+Router(config-if)#ip address 192.168.1.1 255.255.255.192
+Router(config-if)#no shutdown 
+Router(config-if)#ex
+-----------------
+Router(config)#int f 1/0
+Router(config-if)#ip address 192.168.1.65 255.255.255.192
+Router(config-if)#no shutdown 
+Router(config-if)#ex
+-----------------------
+Router(config)#int f 6/0
+Router(config-if)#ip address 192.168.1.129 255.255.255.192
+Router(config-if)#no shutdown 
+Router(config-if)#ex
